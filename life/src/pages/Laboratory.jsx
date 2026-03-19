@@ -72,8 +72,6 @@ const Laboratory = () => {
       ]
     }
   ];
-
-  // ================= SCROLL REVEAL LOGIC =================
   useEffect(() => {
     const observerOptions = { threshold: 0.15 };
     const observer = new IntersectionObserver((entries) => {
@@ -179,7 +177,7 @@ const Laboratory = () => {
       </style>
 
       <section style={heroStyle}>
-        <img src="./public/Pictures/labwall.png" alt="Clinical Lab Hero" style={heroImgStyle} />
+        <img src="/Pictures/labwall.png" alt="Clinical Lab Hero" style={heroImgStyle} />
 
         <div style={contentLayoutStyle}>
           <div style={{ flex: isMobile ? 'none' : '0 1 600px', color: '#fff' }}>
@@ -265,15 +263,12 @@ const Laboratory = () => {
 
       <MedicoreFooter/>
 
-      {/* MOUNTED AI ASSISTANT COMPONENT */}
       <div style={{ position: 'fixed', bottom: '25px', right: '25px', zIndex: 9999 }}>
         <Ask />
       </div>
     </div>
   );
 };
-
-/*--------- REUSABLE STYLES -----------*/
 const liveCardStyle = { width: '100%', background: 'rgba(6, 43, 175, 0.15)', backdropFilter: 'blur(16px)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '24px', padding: '30px', color: '#fff', textAlign: 'center', boxShadow: '0 25px 50px rgba(0,0,0,0.4)' };
 const statusBadgeStyle = { display: 'inline-flex', alignItems: 'center', background: 'rgba(0,255,100,0.2)', color: '#00ff64', padding: '6px 14px', borderRadius: '20px', fontSize: '12px', fontWeight: 'bold', marginBottom: '20px' };
 const pulseDotStyle = { width: '8px', height: '8px', backgroundColor: '#00ff64', borderRadius: '50%', marginRight: '8px', boxShadow: '0 0 10px #00ff64' };
