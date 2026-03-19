@@ -13,7 +13,6 @@ const MedicalBlog = () => {
   const isMobile = windowWidth <= 768;
   const isTablet = windowWidth <= 1024;
 
-  // ================= STYLES =================
   const s = {
     container: {
       backgroundColor: "#f4f7fe",
@@ -128,7 +127,6 @@ const MedicalBlog = () => {
     },
   };
 
-  // ================= BLOG CARD COMPONENT =================
   const BlogCard = ({ img, tag, title }) => (
     <div style={s.card}>
       <div style={{ position: "relative" }}>
