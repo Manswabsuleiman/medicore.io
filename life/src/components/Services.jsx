@@ -72,8 +72,6 @@ const Services = () => {
 
   const isServiceOpen = (service) =>
     currentHour >= service.open && currentHour < service.close;
-
-  // ================= DYNAMIC STYLES =================
   const containerStyle = {
     display: "flex",
     flexDirection: isTablet ? "column" : "row",
@@ -81,7 +79,7 @@ const Services = () => {
     margin: "0 auto",
     gap: isMobile ? "20px" : "40px",
     padding: isMobile ? "0 20px" : "0 40px",
-    boxSizing: "border-box", // Prevents padding from adding to width
+    boxSizing: "border-box", 
   };
 
   const imageWrapStyle = {
@@ -107,7 +105,7 @@ const Services = () => {
       width: "100%", 
       padding: isMobile ? "40px 0" : "80px 0", 
       background: "#fff",
-      overflowX: "hidden", // REMOVES BOTTOM SCROLLBAR
+      overflowX: "hidden", 
       boxSizing: "border-box"
     }}>
       
@@ -159,7 +157,7 @@ const Services = () => {
         {/* LEFT IMAGE */}
         <div style={imageWrapStyle}>
           <img
-            src="./public/Pictures/services.png"
+            src="/Pictures/services.png"
             alt="Hospital Services"
             style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
           />
@@ -177,7 +175,6 @@ const Services = () => {
 
             return (
               <div key={service.id} style={{ borderBottom: "1px solid #eee", padding: "15px 0" }}>
-                {/* ACCORDION HEADER */}
                 <div
                   onClick={() => setOpenServiceId(expanded ? null : service.id)}
                   style={{ 
@@ -192,7 +189,6 @@ const Services = () => {
                     {service.name}
                   </span>
 
-                  {/* GREEN STATUS BADGE */}
                   <span style={{
                     padding: "5px 10px",
                     borderRadius: "12px",
@@ -206,7 +202,6 @@ const Services = () => {
                   </span>
                 </div>
 
-                {/* EXPANDABLE BODY */}
                 {expanded && (
                   <div style={{ marginTop: "12px", animation: "fadeIn 0.3s ease" }}>
                     <p style={{ fontSize: "14px", color: "#555", lineHeight: "1.6", margin: "0 0 8px 0" }}>
