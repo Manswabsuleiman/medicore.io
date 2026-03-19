@@ -28,7 +28,7 @@ const Medical = () => {
         <div style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: `linear-gradient(rgba(139, 146, 158, 0.85), rgba(45, 92, 180, 0.85)), url("./public/Pictures/doctors.png")`,
+          backgroundImage: `linear-gradient(rgba(139, 146, 158, 0.85), rgba(45, 92, 180, 0.85)), url("/Pictures/doctors.png")`,
           backgroundSize: 'cover',
           marginTop: '55px',
           backgroundPosition: 'center',
@@ -101,7 +101,7 @@ const Medical = () => {
               marginTop: '30px' 
             }}>
                <img 
-                 src="./public/Pictures/sign.png" 
+                 src="/Pictures/sign.png" 
                  alt="Signature" 
                  style={{ height: '35px', opacity: 0.8 }} 
                />
@@ -158,7 +158,7 @@ const Medical = () => {
                 }}></div>
 
                 <img 
-                    src="./public/Pictures/pulm2.png" 
+                    src="/Pictures/pulm2.png" 
                     alt="Head Specialist" 
                     style={{ width: '100%', height: '100%', objectFit: 'cover', zIndex: 2 }} 
                 />
