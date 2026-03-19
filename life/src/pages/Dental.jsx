@@ -8,7 +8,7 @@ import {
   Stethoscope 
 } from 'lucide-react';
 import MedicoreFooter from '../components/Footer';
-import Ask from '../components/Ask'; // IMPORTED HERE
+import Ask from '../components/Ask'; 
 
 const Dental = () => {
   
@@ -177,8 +177,6 @@ const Dental = () => {
           </div>
         </div>
       </section>
-
-      {/* SPECIALISTS SECTION */}
       <section style={{ padding: isMobile ? '60px 20px' : '80px 20px', backgroundColor: '#f8f9ff' }}>
         <h2 style={{...sectionTitleStyle, fontSize: isMobile ? '26px' : '32px'}} className="reveal">Our Dental Specialists</h2>
         <div style={docGridStyle(isMobile)}>
@@ -192,7 +190,6 @@ const Dental = () => {
         </div>
       </section>
 
-      {/* SERVICES SECTION */}
       <section style={{ padding: isMobile ? '60px 20px' : '80px 20px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: isMobile ? '30px' : '60px' }} className="reveal">
@@ -225,8 +222,6 @@ const Dental = () => {
       </section>
 
       <MedicoreFooter/>
-
-      {/* ASSET MOUNTED GLOBALLY */}
       <div style={{ position: 'fixed', bottom: '25px', right: '25px', zIndex: 9999 }}>
         <Ask />
       </div>
