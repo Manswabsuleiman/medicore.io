@@ -60,7 +60,7 @@ const Question = () => {
           maxWidth: isTablet ? '600px' : 'none'
         }}>
           <img 
-            src="./public/Pictures/question.png" 
+            src="/Pictures/question.png" 
             alt="Medical Support" 
             style={{ 
               width: '100%', 
