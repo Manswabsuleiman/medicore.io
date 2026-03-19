@@ -35,10 +35,10 @@ const Pulmonary = () => {
   };
 
   const doctors = [
-    { name: "Dr. Alveoli Smith", img: "./public/Pictures/pulm1.png" },
-    { name: "Dr. Broncho Lee", img: "./public/Pictures/pulm2.png" },
-    { name: "Dr. B. Pneuma", img: "./public/Pictures/pulm3.png" },
-    { name: "Dr. Shantel Keith", img: "./public/Pictures/pulm4.png" },
+    { name: "Dr. Alveoli Smith", img: "/Pictures/pulm1.png" },
+    { name: "Dr. Broncho Lee", img: "/Pictures/pulm2.png" },
+    { name: "Dr. B. Pneuma", img: "/Pictures/pulm3.png" },
+    { name: "Dr. Shantel Keith", img: "/Pictures/pulm4.png" },
   ];
 
   const categories = [
