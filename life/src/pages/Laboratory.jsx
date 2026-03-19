@@ -34,10 +34,10 @@ const Laboratory = () => {
   };
 
   const doctors = [
-    { name: "Dr. Johnwick Mwangi", img: "./public/Pictures/lab1.png" },
-    { name: "Dr. Angel Sly", img: "./public/Pictures/lab2.png" },
-    { name: "Dr. Mack E.", img: "./public/Pictures/lab3.png" },
-    { name: "Dr. Steve Parte", img: "./public/Pictures/lab4.png" },
+    { name: "Dr. Johnwick Mwangi", img: "/Pictures/lab1.png" },
+    { name: "Dr. Angel Sly", img: "/Pictures/lab2.png" },
+    { name: "Dr. Mack E.", img: "/Pictures/lab3.png" },
+    { name: "Dr. Steve Parte", img: "/Pictures/lab4.png" },
   ];
 
   const categories = [
