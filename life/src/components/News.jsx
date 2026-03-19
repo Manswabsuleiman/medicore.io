@@ -32,7 +32,7 @@ const News = () => {
       category: "Technology",
       short: "Medicore.io introduces AI imaging to detect early-stage COPD with 98% accuracy.",
       full: "Our facility has officially integrated the latest AI-driven diagnostic tools. This technology allows our pulmonologists to analyze HRCT scans in seconds, identifying microscopic obstructions that were previously difficult to detect. This leads to earlier intervention and significantly better patient outcomes.",
-      img: "./public/Pictures/who.png",
+      img: "/Pictures/who.png",
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const News = () => {
       category: "Awards",
       short: "We are proud to be ranked as the #1 Pulmonary center for patient satisfaction this year.",
       full: "For the third year running, Medicore.io has been recognized by the National Healthcare Board. Our commitment to 'Specialized Pulmonary Care' and our 24/7 emergency oxygen support systems have set a new benchmark for clinics in Kenya.",
-      img: "./public/Pictures/respiration.png",
+      img: "/Pictures/respiration.png",
     },
     {
       id: 3,
@@ -52,7 +52,7 @@ const News = () => {
       category: "Research",
       short: "Participate in our upcoming clinical trials for next-gen inhaler technology.",
       full: "We are opening doors for patients to join our Phase III clinical trials. These trials focus on long-acting bronchodilators that require only once-weekly administration, potentially revolutionizing the way asthma is managed globally.",
-      img: "./public/Pictures/asthma.png",
+      img: "/Pictures/asthma.png",
     },
     {
       id: 4,
@@ -62,7 +62,7 @@ const News = () => {
       category: "Facility",
       short: "Our hospital is growing! A dedicated pediatric pulmonary wing opens next month.",
       full: "To better serve our younger patients, we are opening a specialized wing designed for children with chronic respiratory issues. It features child-friendly diagnostic rooms and a team of top-tier pediatric pulmonologists.",
-      img: "./public/Pictures/pediatrics.png",
+      img: "/Pictures/pediatrics.png",
     },
   ];
 
@@ -88,7 +88,6 @@ const News = () => {
         }}
       >
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 20px" }}>
-          {/* Header */}
           <div
             style={{
               marginBottom: isMobile ? "30px" : "50px",
@@ -132,7 +131,6 @@ const News = () => {
             </div>
           </div>
 
-          {/* Carousel */}
           <div
             ref={scrollRef}
             style={{
@@ -266,7 +264,6 @@ const News = () => {
   );
 };
 
-/* Internal Styles */
 
 const cardStyle = {
   backgroundColor: "#fff",
