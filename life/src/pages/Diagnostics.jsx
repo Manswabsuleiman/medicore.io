@@ -24,10 +24,10 @@ const Diagnostics = () => {
   };
 
   const doctors = [
-    { name: "Dr. Ericksen", img: "./public/Pictures/diag3.png" },
-    { name: "Dr. Williams Beckon", img: "./public/Pictures/diag6.png" },
-    { name: "Dr. Shamim Wanjiru", img: "./public/Pictures/diag4.png" },
-    { name: "Dr. Susan Jobs", img: "./public/Pictures/diag5.png" },
+    { name: "Dr. Ericksen", img: "/Pictures/diag3.png" },
+    { name: "Dr. Williams Beckon", img: "/Pictures/diag6.png" },
+    { name: "Dr. Shamim Wanjiru", img: "/Pictures/diag4.png" },
+    { name: "Dr. Susan Jobs", img: "/Pictures/diag5.png" },
   ];
 
   const categories = [
@@ -63,7 +63,6 @@ const Diagnostics = () => {
     },
   ];
 
-  // ================= EFFECTS =================
   useEffect(() => {
     const observerOptions = { threshold: 0.15 };
     const observer = new IntersectionObserver((entries) => {
@@ -92,7 +91,6 @@ const Diagnostics = () => {
     return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
   };
 
-  // ================= RESPONSIVE INLINE STYLES =================
   const heroWrapperStyle = { 
     position: 'relative', 
     width: '100%', 
@@ -154,8 +152,6 @@ const Diagnostics = () => {
           .reveal:nth-child(3) { transition-delay: 0.3s; }
         `}
       </style>
-
-      {/* ================= HERO SECTION ================= */}
       <section style={heroWrapperStyle}>
         <img src="/Pictures/diag2.png" alt="Diagnostics Lab" style={backgroundImageStyle} />
 
@@ -189,7 +185,6 @@ const Diagnostics = () => {
         </div>
       </section>
 
-      {/* ================= SPECIALISTS GRID ================= */}
       <section style={{ padding: isMobile ? '60px 20px' : '80px 20px', backgroundColor: '#f4f7fa' }}>
         <h2 className="reveal" style={{ textAlign: 'center', color: '#1a3a8a', marginBottom: '50px', fontSize: isMobile ? '24px' : '32px' }}>
           Meet Our Diagnostic Specialists
@@ -205,7 +200,6 @@ const Diagnostics = () => {
         </div>
       </section>
 
-      {/* ================= TEST CATEGORIES ================= */}
       <section style={servicesSectionStyle}>
         <div style={containerMaxWidth}>
           <div style={sectionHeaderStyle} className="reveal">
@@ -245,7 +239,6 @@ const Diagnostics = () => {
   );
 };
 
-/* ================= STYLES ================= */
 const backgroundImageStyle = { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(35%)', zIndex: 1 };
 const doctorCardStyle = { background: 'rgba(17, 2, 219, 0.12)', backdropFilter: 'blur(16px)', border: '1px solid rgba(255, 255, 255, 0.25)', borderRadius: '28px', padding: '30px', color: '#fff', textAlign: 'center', boxShadow: '0 30px 60px rgba(0,0,0,0.4)' };
 const statusBadgeStyle = { display: 'inline-flex', alignItems: 'center', background: 'rgba(0, 255, 100, 0.2)', color: '#00ff64', padding: '6px 14px', borderRadius: '20px', fontSize: '12px', fontWeight: 'bold', marginBottom: '20px' };
