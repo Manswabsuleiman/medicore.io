@@ -62,7 +62,7 @@ const Appointments = () => {
         backgroundColor: '#000'
       }}>
         <img 
-          src="./public/Pictures/medcal.png" 
+          src="/Pictures/medcal.png" 
           alt="Medical" 
           style={{ 
             position: 'absolute',
