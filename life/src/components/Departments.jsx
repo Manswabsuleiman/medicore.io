@@ -55,11 +55,11 @@ const Departments = () => {
   };
 
   const departmentData = [
-    { name: "Diagnostics", path: "/diagnostics", img: "./public/Pictures/diagnostics.png" },
-    { name: "Cardiology", path: "/cardiology", img: "./public/Pictures/card.png" },
-    { name: "Dental", path: "/dental", img: "./public/Pictures/Dental.png" },
-    { name: "Pulmonary", path: "/pulmonary", img: "./public/Pictures/pulmonary.png" },
-    { name: "Laboratory", path: "/laboratory", img: "./public/Pictures/hosp.png" },
+    { name: "Diagnostics", path: "/diagnostics", img: "/Pictures/diagnostics.png" },
+    { name: "Cardiology", path: "/cardiology", img: "/Pictures/card.png" },
+    { name: "Dental", path: "/dental", img: "/Pictures/Dental.png" },
+    { name: "Pulmonary", path: "/pulmonary", img: "/Pictures/pulmonary.png" },
+    { name: "Laboratory", path: "/laboratory", img: "/Pictures/hosp.png" },
   ];
 
   return (
