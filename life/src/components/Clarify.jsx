@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://admin-panel-server-a3qf.onrender.com');
 
 const AppointmentModal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -140,8 +140,8 @@ const AppointmentModal = () => {
                 marginBottom: '15px', 
                 padding: '12px', 
                 borderRadius: '8px', 
-                backgroundColor: message.includes('✅') ? '#e6f4ea' : '#fdecea', 
-                color: message.includes('✅') ? '#188038' : '#d93025', 
+                backgroundColor: message.includes('') ? '#e6f4ea' : '#fdecea', 
+                color: message.includes('') ? '#188038' : '#d93025', 
                 fontSize: '14px', 
                 textAlign: 'center',
                 fontWeight: '500'
