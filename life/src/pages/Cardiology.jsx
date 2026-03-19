@@ -34,10 +34,10 @@ const Cardiology = () => {
   };
 
   const doctors = [
-    { name: "Dr. Shantel Kristen", img: "./public/Pictures/logy3.png" },
-    { name: "Dr. Shurti Mahrti", img: "./public/Pictures/logy2.png" },
-    { name: "Dr. Selem", img: "./public/Pictures/logy1.png" },
-    { name: "Dr. Culture", img: "./public/Pictures/logy4.png" },
+    { name: "Dr. Shantel Kristen", img: "/Pictures/logy3.png" },
+    { name: "Dr. Shurti Mahrti", img: "/Pictures/logy2.png" },
+    { name: "Dr. Selem", img: "/Pictures/logy1.png" },
+    { name: "Dr. Culture", img: "/Pictures/logy4.png" },
   ];
 
   const categories = [
@@ -235,7 +235,6 @@ const Cardiology = () => {
 
       <MedicoreFooter/>
 
-      {/* 2. ASK COMPONENT MOUNTED GLOBALLY */}
       <div style={{ position: 'fixed', bottom: '25px', right: '25px', zIndex: 9999 }}>
         <Ask />
       </div>
@@ -243,7 +242,6 @@ const Cardiology = () => {
   );
 };
 
-/*--------- STYLES HELPERS -----------*/
 const heroImgStyle = { width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(35%)', position: 'absolute', inset: 0, zIndex: 1 };
 const liveCardStyle = { width: '100%', background: 'rgba(6, 43, 175, 0.15)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.25)', borderRadius: '28px', padding: '30px', color: '#fff', textAlign: 'center', boxShadow: '0 30px 60px rgba(0,0,0,0.45)' };
 const statusBadgeStyle = { display: 'inline-flex', alignItems: 'center', background: 'rgba(0,255,100,0.2)', color: '#00ff64', padding: '6px 14px', borderRadius: '20px', fontSize: '12px', fontWeight: 'bold', marginBottom: '20px' };
