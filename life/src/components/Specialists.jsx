@@ -22,35 +22,35 @@ const Specialists = () => {
       field: "Cardiology",
       desc: "Expert in interventional cardiology and heart failure management.",
       hours: "Mon-Thu: 08:00 - 18:00",
-      img: "./public/Pictures/labwall.png"
+      img: "/Pictures/labwall.png"
     },
     {
       name: "Dr. Ann Great",
       field: "Pediatrics",
       desc: "Specializing in neonatal care and adolescent developmental health.",
       hours: "Mon-Fri: 09:00 - 17:00",
-      img: "./public/Pictures/doctor2.png"
+      img: "/Pictures/doctor2.png"
     },
     {
       name: "Dr. John Whatson",
       field: "Neurology",
       desc: "Focuses on neurodegenerative disorders and sleep medicine.",
       hours: "Tue-Sat: 10:00 - 19:00",
-      img: "./public/Pictures/doctor3.png"
+      img: "/Pictures/doctor3.png"
     },
     {
       name: "Dr. Julia Roberts",
       field: "Cardiology",
       desc: "Specialist in non-invasive cardiac imaging and diagnostics.",
       hours: "Mon-Fri: 08:00 - 16:00",
-      img: "./public/Pictures/logy3.png"
+      img: "/Pictures/logy3.png"
     },
     {
       name: "Dr. Alveoli Smith",
       field: "Pulmonology",
       desc: "Dedicated to asthma management and chronic lung diseases.",
       hours: "Wed-Sun: 08:00 - 15:00",
-      img: "./public/Pictures/doctors.png"
+      img: "/Pictures/doctors.png"
     }
   ];
 
