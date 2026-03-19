@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 
-const socket = io('https://admin-panel-server-a3qf.onrender.com');
+const socket = io('https://admin-server-n95q.onrender.com/');
 
 const AppointmentModal = () => {
   const [isOpen, setIsOpen] = useState(false);
